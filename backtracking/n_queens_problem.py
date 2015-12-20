@@ -7,13 +7,13 @@ class NQueens(object):
     def issafe(self,row,col):
         #check backwards horizontally
         for i in range(col):
-            if self.solution[row][i] ==1:
+            if self.solution[row][i] == 1:
                 return False
             
         #check upper diagonal
         r,c=row,col
         while r >= 0  and c >= 0 :
-            if self.solution[r][c] ==1:
+            if self.solution[r][c] == 1:
                 return False
             r=r-1
             c=c-1
@@ -45,9 +45,7 @@ class NQueens(object):
                     self.solution[row][col] = 1
                     if self.placeQueen(col+1,N) : 
                         return True
- 
                 self.solution[row][col] = 0
-            
             return False
 
 
