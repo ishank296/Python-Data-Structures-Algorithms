@@ -1,0 +1,58 @@
+1 Write an Efficient Method to Check if a Number is Multiple of 3
+2 Efficient way to multiply with 7
+3 Write a C program to print all permutations of a given string
+4 Lucky Numbers
+5 Write a program to add two numbers in base 14
+6 Babylonian method for square root
+7 Multiply two integers without using multiplication, division and bitwise operators, and no loops
+8 Print all combinations of points that can compose a given number
+9 Write you own Power without using multiplication(*) and division(/) operators
+10 Program for Fibonacci numbers
+11 Average of a stream of numbers
+12 Count numbers that don’t contain 3
+13 MagicSquare
+14 Sieve of Eratosthenes
+15 Find day of the week for a given date
+16 DFA based division
+17 Generate integer from 1 to 7 with equal probability
+18 Given a number, find the next smallest palindrome
+19 Make a fair coin from a biased coin
+20 Check divisibility by 7
+21 Find the largest multiple of 3
+22 Lexicographic rank of a string
+23 Print all permutations in sorted (lexicographic) order
+24 Shuffle a given array
+25 Space and time efficient Binomial Coefficient
+26 Reservoir Sampling
+27 Pascal’s Triangle
+28 Select a random number from stream, with O(1) space
+29 Find the largest multiple of 2, 3 and 5
+30 Efficient program to calculate e^x
+31 Measure one litre using two vessels and infinite water supply
+32 Efficient program to print all prime factors of a given number
+33 Print all possible combinations of r elements in a given array of size n
+34 Random number generator in arbitrary probability distribution fashion
+35 How to check if a given number is Fibonacci number?
+36 Russian Peasant Multiplication
+37 Count all possible groups of size 2 or 3 that have sum as multiple of 3
+38 Tower of Hanoi
+39 Horner’s Method for Polynomial Evaluation
+40 Count trailing zeroes in factorial of a number
+41 Program for nth Catalan Number
+42 Generate one of 3 numbers according to given probabilities
+43 Find Excel column name from a given column number
+44 Find next greater number with same set of digits
+45 Count Possible Decodings of a given Digit Sequence
+46 Calculate the angle between hour hand and minute hand
+47 Count number of binary strings without consecutive 1?s
+48 Find the smallest number whose digits multiply to a given number n
+49 Draw a circle without floating point arithmetic
+50 How to check if an instance of 8 puzzle is solvable?
+51 Birthday Paradox
+52 Multiply two polynomials
+53 Count Distinct Non-Negative Integer Pairs (x, y) that Satisfy the Inequality x*x + y*y < n
+54 Count ways to reach the n’th stair
+55 Replace all ‘0’ with ‘5’ in an input Integer
+56 Program to add two polynomials
+57 Print first k digits of 1/n where n is a positive integer
+58 Given a number as a string, find the number of contiguous subsequences which recursively add up to 9
