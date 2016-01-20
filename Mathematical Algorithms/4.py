@@ -3,6 +3,7 @@
 [1,3,5,7,9,11,13,15] ==>counter=2,next_pos=8
 [1,3,7,9,13,15] ==>counter=3, next_pos=6 
 [1,3,7,13,15] ==>counter=4, next_pos=5
+[1,3,7,13] ==>counter=5, next_pos= __
 '''
 
 def isLucky(n,counter=2):
@@ -15,7 +16,7 @@ def isLucky(n,counter=2):
     counter= counter+1
     return isLucky(next_pos,counter)
 
-print isLucky(2)
+print isLucky(15)
         
     
     

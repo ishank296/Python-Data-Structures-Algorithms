@@ -4,6 +4,27 @@ class Vertex(object):
     def __init__(self,key):
         self.id = key
         self.connectedTo = {}
+        self.color = "white"
+        self.predecessor=None
+        self.distance = 0
+    
+    def getPred(self):
+        return self.predecessor
+        
+    def setPred(self,pred):
+        self.predecessor = pred
+    
+    def getColor(self):
+        return self.color
+    
+    def setColor(self,color):
+        self.color = color
+    
+    def getDistance(self):
+        return self.distance
+    
+    def setDistance(self,distance):
+        self.distance = distance
     
     def addNeighbour(self,nbr,weight=0):
         self.connectedTo[nbr]=weight
@@ -61,24 +82,24 @@ class Graph(object):
     
     
     
-g = Graph()
-for i in range(6):
-    g.addVertex(i)
+#g = Graph()
+#for i in range(6):
+#    g.addVertex(i)
 
 
 
-g.addEdge(0,1,5)
-g.addEdge(0,5,2)
-g.addEdge(1,2,4)
-g.addEdge(2,3,9)
-g.addEdge(3,4,7)
-g.addEdge(3,5,3)
-g.addEdge(4,0,1)
-g.addEdge(5,4,8)
-g.addEdge(5,2,1)
+#g.addEdge(0,1,5)
+#g.addEdge(0,5,2)
+#g.addEdge(1,2,4)
+#g.addEdge(2,3,9)
+#g.addEdge(3,4,7)
+#g.addEdge(3,5,3)
+#g.addEdge(4,0,1)
+#g.addEdge(5,4,8)
+#g.addEdge(5,2,1)
 
 
 
-print g.vertlist
-for v in g:
-    print g.getVertex(v.getID())
+#print g.vertlist
+#for v in g:
+#    print g.getVertex(v.getID())
