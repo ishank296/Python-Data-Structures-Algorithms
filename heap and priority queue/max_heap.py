@@ -26,6 +26,6 @@ def build_maxheap(arr):
         max_heapify(arr,i)
         i = i-1
         
-Arr=[1,2,3,4,5,6,7,8,9]
-build_maxheap(Arr)
-print Arr
+#Arr=[1,2,3,4,5,6,7,8,9]
+#build_maxheap(Arr)
+#print Arr
