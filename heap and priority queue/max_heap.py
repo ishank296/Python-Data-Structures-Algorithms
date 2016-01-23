@@ -18,7 +18,14 @@ def max_heapify(arr,i):
     if (largest!=i):
         arr[i],arr[largest]=arr[largest],arr[i]
         max_heapify(arr,largest)
-        
+
+
+def extract_max(arr):
+	max_elem = arr[0]
+	arr[0],arr[-1] = arr[-1],arr[0]
+	arr.pop()
+	max_heapify(arr,0)
+	return max_elem        
 
 def build_maxheap(arr):
     mid = len(arr)/2
@@ -28,4 +35,12 @@ def build_maxheap(arr):
         
 Arr=[1,2,3,4,5,6,7,8,9]
 build_maxheap(Arr)
+
+print Arr
+print extract_max(Arr)
+print extract_max(Arr)
+print extract_max(Arr)
+print extract_max(Arr)
+
+
 print Arr
