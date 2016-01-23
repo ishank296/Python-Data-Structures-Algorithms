@@ -34,6 +34,7 @@ def worker():
         # extract task from queue in FIFO manner
         item = q.get()
         if item is None:
+            print "No item in queue"
             break
         # process task
         do_work(item)
@@ -51,7 +52,7 @@ for i in range(num_worker_threads):
 
 for item in source():
     q.put(item)
-
+    
 # block until all tasks are done
 q.join()
 
