@@ -12,22 +12,40 @@ q.empty()
 q.full()
 '''
 
-from queue import Queue
+from Queue import Queue
+import threading
+import time,random
+num_worker_threads=2
+
+#generator to simulate task source
+def source():
+    for i in xrange(10):
+        yield i
+
+#method for processing item
+def do_work(item):
+    print "task", item, "finished"
+    #time.sleep(random.randint(10,100)/1000.0)
+    
+
 
 def worker():
     while True:
+        # extract task from queue in FIFO manner
         item = q.get()
         if item is None:
             break
+        # process task
         do_work(item)
+        # mark task as done
         q.task_done()
 
-q = queue.Queue()
+q = Queue()  #thread-safe FIFO queue
 threads = []
 
 # start worker threads 
 for i in range(num_worker_threads):
-    t = threadin.Thread(target = woker)
+    t = threading.Thread(target = worker)
     t.start()
     threads.append(t)
 
