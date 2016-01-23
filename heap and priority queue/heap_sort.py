@@ -12,15 +12,16 @@ def max_heapify(arr,i,N):
 
         
 def heap_sort(arr):
-    n = len(arr)/ 2
-    while (n >= 0):
-        max_heapify(arr,n,len(arr)-1)
-        n = n-1
-    i = len(arr)-1
-    while(i >= 0):
+    #build heap
+    mid = len(arr)/ 2
+    for i in range(mid,-1,-1):
+        max_heapify(arr,i,len(arr)-1)
+
+    #heap sort
+    for i in range(len(arr)-1,-1,-1):
         arr[0],arr[i]=arr[i],arr[0]
         max_heapify(arr,0,i-1)
-        i=i-1
+
 a = [23,12,45,76,64,98,60,89]
 heap_sort(a)
 print a 

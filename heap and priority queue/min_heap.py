@@ -15,11 +15,10 @@ def min_heapify(arr,i):
 
 
 def build_minheap(arr):
-    i = len(arr)/2
-    while(i >= 0):
+    for i in range(len(arr)/2,-1,-1):
         min_heapify(arr,i)
-        i = i-1
+        
 
-#Arr=[10,9,8,7,6,5,4,3,2,1]
-#build_minheap(Arr)
-#print Arr
+Arr=[10,9,8,7,6,5,4,3,2,1]
+build_minheap(Arr)
+print Arr

@@ -21,11 +21,11 @@ def max_heapify(arr,i):
         
 
 def build_maxheap(arr):
-    i = len(arr)/2
-    while(i >= 0):
+    mid = len(arr)/2
+    for i in xrange(mid,-1,-1):
         max_heapify(arr,i)
-        i = i-1
+    
         
-#Arr=[1,2,3,4,5,6,7,8,9]
-#build_maxheap(Arr)
-#print Arr
+Arr=[1,2,3,4,5,6,7,8,9]
+build_maxheap(Arr)
+print Arr
