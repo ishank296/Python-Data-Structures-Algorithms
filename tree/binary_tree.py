@@ -38,14 +38,14 @@ class BinaryTree(object):
     def getRootVal(self):
         return self.key
 
-        
-t = BinaryTree('a')
-l = t.insertLeft('b')
-r = t.insertRight('c')
-t.getRightChild().setRootVal('hello')
-print t.getRootVal()
-print t.getRightChild().getRootVal()
-print t.getLeftChild().getRootVal()
+if __name__ == "__main__":      
+    t = BinaryTree('a')
+    l = t.insertLeft('b')
+    r = t.insertRight('c')
+    t.getRightChild().setRootVal('hello')
+    print t.getRootVal()
+    print t.getRightChild().getRootVal()
+    print t.getLeftChild().getRootVal()
 
     
     
