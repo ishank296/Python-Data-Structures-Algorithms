@@ -37,7 +37,7 @@ def search(root,data):
 
 
 def insert(root,data):
-
+    pass
                 
             
             
