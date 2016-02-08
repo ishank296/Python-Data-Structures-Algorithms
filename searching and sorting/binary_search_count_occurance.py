@@ -18,6 +18,7 @@ def binary_search(arr,k,searchFirst):
 
 def find_count(arr,k):
     firstIndex = binary_search(arr,k,True)
+    if firstIndex == -1 : return -1
     lastIndex = binary_search(arr,k,False)
     count_k = lastIndex - firstIndex + 1
     return count_k
@@ -29,3 +30,4 @@ if __name__ == '__main__':
     print find_count(arr,3)
     print find_count(arr,90)
     print find_count(arr,89)
+    print find_count(arr,19)
