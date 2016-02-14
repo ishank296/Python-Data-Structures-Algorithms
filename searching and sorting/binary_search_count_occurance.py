@@ -6,10 +6,10 @@ def binary_search(arr,k,searchFirst):
         mid = (start+end)/2
         if arr[mid] == k :  # if k found, update value of result variable
             result = mid
-            if (searchFirst): # if search for first occurence, continue search in left part of array
+            if (searchFirst): # if searching for first occurence, continue search in left part of array
                 end = mid - 1
             else:
-                start  = mid + 1 # if searh for last occurence, continue searh in right part of array
+                start  = mid + 1 # if searhing for last occurence, continue searh in right part of array
         elif arr[mid] > k:
             end = mid - 1
         else:
